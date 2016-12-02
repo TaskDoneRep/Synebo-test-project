@@ -6775,7 +6775,8 @@ button.close {
 .text-uppercase {
   text-transform: uppercase;
 }
-.ul-unstyled {
+.ul-unstyled,
+.site-nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -6922,4 +6923,34 @@ h1 {
 }
 .icon-twitter:before {
   content: "\e904";
+}
+body {
+  font-family: 'Lato-light', Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1;
+}
+.site-header {
+  background-image: url('../img/menu/bg-menu.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.site-nav {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.site-nav ul li {
+  display: inline-block;
+  margin-left: 32px;
+}
+.site-nav ul li a {
+  display: block;
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+}
+.site-nav ul li a.active {
+  background-color: #fff;
+  color: #000;
 }

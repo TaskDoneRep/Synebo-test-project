@@ -1,0 +1,25 @@
+.site-header {
+	.bg-image('bg-menu.png');
+}
+
+.site-nav {
+	background-color: @overlay;
+	background-color: fade(@overlay, 45%);
+	ul {
+		&:extend(.ul-unstyled);
+		li {
+			display: inline-block;
+			margin-left: 32px;
+			a {
+				display: block;
+				color: #fff;
+				font-weight: 300;
+				text-decoration: none;
+				&.active {
+					background-color: #fff;
+					color: #000;
+				}
+			}
+		}
+	}
+}
