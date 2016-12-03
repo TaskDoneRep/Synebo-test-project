@@ -6776,7 +6776,8 @@ button.close {
   text-transform: uppercase;
 }
 .ul-unstyled,
-.site-nav ul {
+.site-nav ul,
+.site-expertise ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -6939,6 +6940,25 @@ body {
 .site-nav {
   background-color: #000000;
   background-color: rgba(0, 0, 0, 0.45);
+  padding-bottom: 20px;
+  padding-top: 15px;
+  border-bottom: 2px solid #858990;
+}
+.site-nav a {
+  font-size: 21px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+}
+.site-nav a span {
+  padding-left: 5px;
+  vertical-align: middle;
+}
+.site-nav a img {
+  margin-left: 120px;
+}
+.site-nav ul {
+  float: right;
 }
 .site-nav ul li {
   display: inline-block;
@@ -6946,11 +6966,92 @@ body {
 }
 .site-nav ul li a {
   display: block;
-  color: #fff;
+  color: #ffffff;
   font-weight: 300;
+  font-size: 16px;
   text-decoration: none;
+  padding-bottom: 6px;
+  line-height: 1;
 }
 .site-nav ul li a.active {
-  background-color: #fff;
-  color: #000;
+  font-weight: 900;
+}
+.site-nav ul li a:hover {
+  transition: all 0.3s linear;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 900;
+  background: url(../img/menu/underline-menu.png) repeat-x 0 100%;
+}
+.site-expertise ul {
+  float: right;
+  position: relative;
+}
+.site-expertise ul li {
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 300;
+  padding: 15px 35px 15px 20px;
+  vertical-align: center;
+  margin-top: 0;
+}
+.site-expertise ul li div {
+  display: block;
+  color: #a5a5a5;
+  padding-top: 6px;
+  text-align: justify;
+  width: 100%;
+  max-width: 475px;
+}
+.site-expertise ul li.active {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.site-expertise ul li:hover {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.text-heading {
+  margin: 85px 0px 85px 0px;
+  color: #f6f6f6;
+  font-size: 41px;
+  font-weight: 800;
+  line-height: 50px;
+}
+button {
+  width: 144px;
+  height: 57px;
+  padding: 0;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  color: #888;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  border-width: 0;
+  background-color: white;
+  margin-bottom: 200px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.register-btn {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #4dbac0;
+  background-color: #4dbac0;
+  outline: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 0 #379095, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -moz-box-shadow: 0 3px 0 #379095, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -ms-box-shadow: 0 3px 0 #379095, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -o-box-shadow: 0 3px 0 #379095, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  box-shadow: 0 3px 0 #379095, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }

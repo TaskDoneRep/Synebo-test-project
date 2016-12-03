@@ -1,25 +1,143 @@
 .site-header {
-	.bg-image('bg-menu.png');
+    .bg-image('bg-menu.png');
 }
 
 .site-nav {
-	background-color: @overlay;
-	background-color: fade(@overlay, 45%);
+    background-color: @overlay;
+    background-color: fade(@overlay, 45%);
+    padding-bottom: 20px;
+    padding-top: 15px;
+    border-bottom: 2px solid #858990;
+    a {
+    	font-size: 21px;
+    	font-weight: 400;
+    	color: @font-menu;
+    	text-decoration: none;
+    	
+    	span {
+			padding-left: 5px;
+			vertical-align: middle;
+    	}
+
+    	img{
+			margin-left: 120px;
+    	}
+    	
+    }
+    ul {
+        &:extend(.ul-unstyled);
+        float: right;
+        li {
+            display: inline-block;
+            margin-left: 32px;
+            a {
+                display: block;
+                color: @font-menu;
+                font-weight: 300;
+                font-size: 16px;
+                text-decoration: none;
+                padding-bottom: 6px;
+                line-height: 1;
+                &.active {
+                    font-weight: 900;
+                }
+                &:hover {
+                	.transition();
+                    color: @font-menu;
+                    font-size: 18px;
+                    font-weight: 900;
+                    background: url(../img/menu/underline-menu.png) repeat-x 0 100%;
+                }
+            }
+        }
+    }
+}
+
+.site-expertise{
+	
 	ul {
 		&:extend(.ul-unstyled);
-		li {
+		float: right;
+		position: relative;
+
+		li{
 			display: inline-block;
-			margin-left: 32px;
-			a {
+			color: white;
+			font-size: 14px;
+			line-height: 1;
+			font-weight: 300;
+			padding: 15px 35px 15px 20px;
+			vertical-align: center;
+			margin-top: 0;
+			
+			div{
 				display: block;
-				color: #fff;
-				font-weight: 300;
-				text-decoration: none;
-				&.active {
-					background-color: #fff;
-					color: #000;
-				}
+				color: #a5a5a5;
+				padding-top: 6px;
+				text-align: justify;
+				width: 100%;
+				max-width: 475px;
+			}
+			&.active{
+				background-color: @overlay;
+				background-color: fade(@overlay, 45%);
+			}
+			&:hover{
+				background-color: @overlay;
+				background-color: fade(@overlay, 45%);
 			}
 		}
 	}
+}
+
+.text-heading{
+	margin: 85px 0px 85px 0px;
+	color: #f6f6f6;
+	font-size: 41px;
+	font-weight: 800;
+	line-height: 50px;
+
+}
+
+button {
+			width: 144px;
+			height: 57px;
+			padding: 0;
+			vertical-align: middle;
+			cursor: pointer;
+			outline: none;
+
+
+			display: inline-block;
+			color: #888;
+			font-size: 11px;
+			font-weight: 500;
+			line-height: 24px;
+			text-transform: uppercase;
+			border-width: 0;
+			background-color: white;
+			margin-bottom: 200px;
+			-webkit-border-radius: 3px; 
+		    -moz-border-radius: 3px;
+		    -ms-border-radius: 3px;
+		    -o-border-radius: 3px; 
+		    border-radius: 3px;
+		}
+
+.register-btn {
+
+
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #4dbac0;
+    background-color: #4dbac0;
+    outline: none;
+
+    border-radius: 5px;
+	-webkit-box-shadow: 0 3px 0 #379095, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 3px 0 #379095, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -ms-box-shadow: 0 3px 0 #379095, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -o-box-shadow: 0 3px 0 #379095, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    box-shadow: 0 3px 0 #379095, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
