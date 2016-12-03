@@ -7042,16 +7042,3 @@ button {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-.register-btn {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #4dbac0;
-  background-color: #4dbac0;
-  outline: none;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 3px 0 #379095, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  -moz-box-shadow: 0 3px 0 #379095, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  -ms-box-shadow: 0 3px 0 #379095, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  -o-box-shadow: 0 3px 0 #379095, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  box-shadow: 0 3px 0 #379095, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-}
