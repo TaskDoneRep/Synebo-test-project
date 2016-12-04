@@ -121,3 +121,78 @@ button {
 		    -o-border-radius: 3px; 
 		    border-radius: 3px;
 		}
+
+.partners {
+	background-color: #f6f6f6;
+	
+	ul {
+		&:extend(.ul-unstyled);
+
+			li{
+				height: 60px;
+				display: inline-block;
+	            margin-top: 40px;
+	            margin-bottom: 38px;
+	            text-align: center;
+	            line-height: 60px;
+	            div {
+	       	        vertical-align: middle;
+	            }
+
+	            div:hover {
+                	.transition();
+                	transform: scale(1.2);
+                	
+                }
+			}
+	}
+	
+}
+.out-team{
+	background-color: @accent;
+	text-align: center;
+		h1 {
+			color: white;
+			font-size: 41px;
+			font-weight: 500;
+			line-height: 6px;
+			margin-top: 60px;
+		}
+		div {
+
+			color: white;
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 24px;
+			// margin-top: 40px;
+			p {
+				width: 500px;
+			}
+		}
+		
+		button {
+			width: 163px;
+			height: 42px;
+			padding: 0;
+			margin-top: 45px;
+			vertical-align: middle;
+			cursor: pointer;
+			outline: none;
+			display: inline-block;
+			color: white;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 6px;
+			text-transform: uppercase;
+			border-width: 0;
+			background-color: #fb4949;
+			margin-bottom: 200px;
+			-webkit-border-radius: 2px; 
+		    -moz-border-radius: 2px;
+		    -ms-border-radius: 2px;
+		    -o-border-radius: 2px; 
+		    border-radius: 2px;
+		}
+
+
+}

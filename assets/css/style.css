@@ -6777,7 +6777,8 @@ button.close {
 }
 .ul-unstyled,
 .site-nav ul,
-.site-expertise ul {
+.site-expertise ul,
+.partners ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -7041,4 +7042,67 @@ button {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
+}
+.partners {
+  background-color: #f6f6f6;
+}
+.partners ul li {
+  height: 60px;
+  display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 38px;
+  text-align: center;
+  line-height: 60px;
+}
+.partners ul li div {
+  vertical-align: middle;
+}
+.partners ul li div:hover {
+  transition: all 0.3s linear;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.out-team {
+  background-color: #97a6bd;
+  text-align: center;
+}
+.out-team h1 {
+  color: white;
+  font-size: 41px;
+  font-weight: 500;
+  line-height: 6px;
+  margin-top: 60px;
+}
+.out-team div {
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.out-team div p {
+  width: 500px;
+}
+.out-team button {
+  width: 163px;
+  height: 42px;
+  padding: 0;
+  margin-top: 45px;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 6px;
+  text-transform: uppercase;
+  border-width: 0;
+  background-color: #fb4949;
+  margin-bottom: 200px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
 }
