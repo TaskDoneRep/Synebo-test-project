@@ -46,7 +46,8 @@
                     color: @font-menu;
                     font-size: 18px;
                     font-weight: 900;
-                    background: url(../img/menu/underline-menu.png) repeat-x 0 100%;
+                    // background: url(../img/menu/underline-menu.png) repeat-x 0 100%;
+                    border-bottom: 3px solid #5cab22;
                 }
             }
         }
@@ -57,10 +58,11 @@
 	
 	ul {
 		&:extend(.ul-unstyled);
-		float: right;
 		position: relative;
+		text-align: center;
 
 		li{
+			// float: right;
 			display: inline-block;
 			color: white;
 			font-size: 14px;
@@ -69,6 +71,8 @@
 			padding: 15px 35px 15px 20px;
 			vertical-align: center;
 			margin-top: 0;
+			text-align: left;
+
 			
 			div{
 				display: block;
@@ -96,7 +100,6 @@
 	font-size: 41px;
 	font-weight: 800;
 	line-height: 50px;
-
 }
 
 button {
@@ -146,17 +149,20 @@ button {
                 }
 			}
 	}
-	
 }
-.out-team{
+.our-team{
+	height: 320px;
 	background-color: @accent;
 	text-align: center;
+
+
+	.about-team{
+		float: left;
+		margin-left: 190px;
 		h1 {
 			color: white;
-			font-size: 41px;
-			font-weight: 500;
-			line-height: 6px;
-			margin-top: 60px;
+			margin-top: 40px;
+
 		}
 		div {
 
@@ -164,7 +170,7 @@ button {
 			font-size: 24px;
 			font-weight: 300;
 			line-height: 24px;
-			// margin-top: 40px;
+			margin-top: 30px;
 			p {
 				width: 500px;
 			}
@@ -174,7 +180,7 @@ button {
 			width: 163px;
 			height: 42px;
 			padding: 0;
-			margin-top: 45px;
+			margin-top: 40px;
 			vertical-align: middle;
 			cursor: pointer;
 			outline: none;
@@ -193,6 +199,63 @@ button {
 		    -o-border-radius: 2px; 
 		    border-radius: 2px;
 		}
+	}
 
+	.team-foto {
+			float: right;
+			  margin:0 -15px 0;
+			  overflow:hidden; /* this is important */
+			  position:relative; /* this is important too */
+			  width:1060px;
+			  height:320px;
+	 
+			img{
+			margin-top: -130px;
+			overflow:hidden;
+			}
+	}
+}
+
+.expertise{
+	background-color: #fff;
+	color: @font;
+	text-align: center;
+
+		.exp-heading{
+			margin:0 auto;
+			
+			h1{
+				color: black;
+				font-family: 'Lato-Medium', Arial, sans-serif;
+				// margin:0 auto;
+			}
+			p {
+				/* Text style for "Our team has a" */
+				width: 800px;
+				font-size: 24px;
+				font-weight: 300;
+				line-height: 24px;
+			}
+		}
+		.row{
+				margin-top: 55px;
+				h3{
+					color: black;
+					font-family: 'Lato-Regular', Arial, sans-serif;
+					font-size: 24px;
+					font-weight: 400;
+					line-height: 16px;
+					margin-top: 25px;
+
+				}
+				p{
+					font-family: 'Lato-Regular', Arial, sans-serif;
+					font-size: 16px;
+					font-weight: 300;
+					line-height: 22px;
+					margin-top: 32px;
+				}
+
+		}
 
 }
