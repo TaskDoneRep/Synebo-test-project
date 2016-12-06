@@ -14,11 +14,18 @@
   transition: @prop @time @ease;
 }
 
-
 .bg-image(@img, @pos: center center, @att: scroll){
 	background-image: url('@{img-folder-menu}@{img}');
 	background-position: @pos;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: @att;
+}
+
+.img-about(@img, @pos: center center, @att: scroll){
+  background-image: url('@{img-about}@{img}');
+  background-position: @pos;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: @att;
 }
